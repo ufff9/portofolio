@@ -34,38 +34,60 @@ export default function Contact() {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 300, damping: 20, delay: 0.1 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+              delay: 0.1,
+            }}
           >
             <p className="font-body text-base md:text-lg text-cream/70 max-w-md leading-relaxed">
-              Have a project in mind? Let&apos;s create something bold and extraordinary together. I&apos;m always open to new opportunities.
+              Have a project in mind? Let&apos;s create something bold and
+              extraordinary together. I&apos;m always open to new opportunities.
             </p>
 
             <div className="space-y-4">
               <motion.div
                 className="flex items-center gap-4 bg-cream/10 border-4 border-cream p-4"
-                whileHover={{ x: -4, y: -4, boxShadow: "8px 8px 0px 0px #FACC15" }}
+                whileHover={{
+                  x: -4,
+                  y: -4,
+                  boxShadow: "8px 8px 0px 0px #FACC15",
+                }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-lemon border-3 border-cream">
                   <Mail size={20} strokeWidth={3} className="text-jet" />
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-sm text-cream/60 uppercase">Email</p>
-                  <p className="font-body font-semibold text-cream">hello@example.com</p>
+                  <p className="font-heading font-bold text-sm text-cream/60 uppercase">
+                    Email
+                  </p>
+                  <p className="font-body font-semibold text-cream">
+                    muhammadraufputra@gmail.com
+                  </p>
                 </div>
               </motion.div>
 
               <motion.div
                 className="flex items-center gap-4 bg-cream/10 border-4 border-cream p-4"
-                whileHover={{ x: -4, y: -4, boxShadow: "8px 8px 0px 0px #06B6D4" }}
+                whileHover={{
+                  x: -4,
+                  y: -4,
+                  boxShadow: "8px 8px 0px 0px #06B6D4",
+                }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 <div className="w-12 h-12 flex items-center justify-center bg-cyan border-3 border-cream">
                   <MapPin size={20} strokeWidth={3} className="text-jet" />
                 </div>
                 <div>
-                  <p className="font-heading font-bold text-sm text-cream/60 uppercase">Location</p>
-                  <p className="font-body font-semibold text-cream">Jakarta, Indonesia</p>
+                  <p className="font-heading font-bold text-sm text-cream/60 uppercase">
+                    Location
+                  </p>
+                  <p className="font-body font-semibold text-cream">
+                    Jambi, Indonesia
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -77,7 +99,12 @@ export default function Contact() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 300, damping: 20, delay: 0.2 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+              delay: 0.2,
+            }}
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -105,7 +132,11 @@ export default function Contact() {
             <motion.button
               type="submit"
               className="w-full sm:w-auto px-8 py-4 font-heading font-bold text-base uppercase text-jet bg-lemon border-4 border-jet shadow-[6px_6px_0px_0px_#FDFBF7] flex items-center justify-center gap-3"
-              whileHover={{ x: -4, y: -4, boxShadow: "10px 10px 0px 0px #FDFBF7" }}
+              whileHover={{
+                x: -4,
+                y: -4,
+                boxShadow: "10px 10px 0px 0px #FDFBF7",
+              }}
               whileTap={{ x: 0, y: 0, boxShadow: "0px 0px 0px 0px #FDFBF7" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
